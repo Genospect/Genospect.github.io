@@ -3561,6 +3561,7 @@ input, select, textarea {
 			min-height: 100%;
 			opacity: 1;
 			position: relative;
+			text-align: center;
 			width: 100%;
 		}
 
@@ -3582,11 +3583,7 @@ input, select, textarea {
 		.sidebar-logo {
 			display: block;
 			max-width: 150px; /* Adjust the size as needed */
-			margin: 0 auto 100px;
-			position: absolute; /* Position the logo absolutely */
-			top: 0px; /* Adjust this value as needed */
-			left: 0%;
-			transform: translateX(-50%); /* Center the logo horizontally */
+			margin: 0 auto;
 			opacity: 0; /* Start with the logo being invisible */
 			animation: flipIn 1s ease forwards; /* Apply the animation */
 		}		
