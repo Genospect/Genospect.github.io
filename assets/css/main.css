@@ -3586,7 +3586,7 @@ input, select, textarea {
 			position: absolute; /* Position the logo absolutely */
 			top: 0px; /* Adjust this value as needed */
 			left: 0%;
-			transform: translateX(100px); /* Center the logo horizontally */
+			transform: translateX(-50%); /* Center the logo horizontally */
 			opacity: 0; /* Start with the logo being invisible */
 			animation: flipIn 1s ease forwards; /* Apply the animation */
 		}		
