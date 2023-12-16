@@ -71,6 +71,13 @@ input, select, textarea {
 	appearance: none;
 }
 
+.divider {
+    height: 10px;
+    background-color: #951061;
+    margin: 0px 0;
+
+}
+
 /* Basic */
 
 	@-ms-viewport {
@@ -2559,59 +2566,46 @@ input, select, textarea {
 					color: #092953;
 				}
 
-/* Image */
+/* Genospect Image */
+.genospect-image {
+    border: 2px solid #ccc; /* Adds a light grey border */
+    padding: 10px; /* Adds space around the image */
+    margin: 10px 0; /* Adds space above and below the image */
+    display: flex; /* Ensures the image takes the full width available */
+    border-radius: 0.25em; /* Rounded corners */
+    max-width: 100%; /* Ensures the image takes the full width available */
+	max-height: 100%;
+}
 
-	.image {
-		border-radius: 0.25em;
-		border: 0;
-		display: inline-block;
-		position: relative;
-	}
+/* Image class and its variations */
+.image {
+    border-radius: 0.25em;
+    display: inline-block;
+    position: relative;
+	margin: 0px 0; /* Adds space above and below the image */
+}
 
-		.image img {
-			border-radius: 0.25em;
-			display: block;
-		}
+.image.left, .image.right {
+    max-width: 40%;
+}
 
-		.image.left, .image.right {
-			max-width: 40%;
-		}
+.image.left {
+    float: left;
+    margin: 0 1.5em 1em 0;
+    top: 0.25em;
+}
 
-			.image.left img, .image.right img {
-				width: 100%;
-			}
+.image.right {
+    float: right;
+    margin: 0 0 1em 1.5em;
+    top: 0.25em;
+}
 
-		.image.left {
-			float: left;
-			margin: 0 1.5em 1em 0;
-			top: 0.25em;
-		}
+.image.fit, .image.main {
+    display: block;
+    margin: 0 0 3em 0;
+}
 
-		.image.right {
-			float: right;
-			margin: 0 0 1em 1.5em;
-			top: 0.25em;
-		}
-
-		.image.fit {
-			display: block;
-			margin: 0 0 2em 0;
-			width: 100%;
-		}
-
-			.image.fit img {
-				width: 100%;
-			}
-
-		.image.main {
-			display: block;
-			margin: 0 0 3em 0;
-			width: 100%;
-		}
-
-			.image.main img {
-				width: 100%;
-			}
 
 /* List */
 
@@ -3256,7 +3250,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color: #048a81;
+			background-color: #080909;
 		}
 
 		.wrapper.style3-alt {
