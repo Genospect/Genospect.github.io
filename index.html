@@ -1,307 +1,197 @@
-<!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<!doctype html>
+<html lang="en">
 	<head>
-		<title>Genospect</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Genospect | Trusted Infrastructure for AI-Driven Biology</title>
+		<meta name="description" content="Genospect provides governed infrastructure for biological data, scientific tool execution, provenance, and machine-readable evidence for AI-driven computational biology." />
+		<meta name="theme-color" content="#06111b" />
+		<meta name="robots" content="index, follow" />
+		<link rel="canonical" href="https://genospect.github.io/" />
 
-		<!-- Sidebar -->
-			<section id="sidebar">
-				<div class="inner">
-					<img src="images/genospectnobgwhite.png" alt="Genospect Logo" class="sidebar-logo">
-					<nav>
-						<ul>
-							<li><a href="#intro">Platform</a></li>
-							<li><a href="#one">Workflows</a></li>
-							<li><a href="#roadmap">Roadmap</a></li>
-							<li><a href="#two">Capabilities</a></li>
-							<li><a href="#three">Access</a></li>
-						</ul>
-					</nav>
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Genospect" />
+		<meta property="og:url" content="https://genospect.github.io/" />
+		<meta property="og:title" content="Genospect | Trusted Infrastructure for AI-Driven Biology" />
+		<meta property="og:description" content="Governed infrastructure for biological data, scientific tool execution, provenance, and machine-readable evidence." />
+		<meta property="og:image" content="https://genospect.github.io/images/og-genospect.png" />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="675" />
+		<meta property="og:image:alt" content="Genospect — trusted infrastructure for AI-driven biology" />
+
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Genospect | Trusted Infrastructure for AI-Driven Biology" />
+		<meta name="twitter:description" content="Biological data, governed execution, and verifiable evidence for AI-driven computational biology." />
+		<meta name="twitter:image" content="https://genospect.github.io/images/og-genospect.png" />
+		<meta name="twitter:image:alt" content="Genospect — trusted infrastructure for AI-driven biology" />
+
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@graph": [
+				{
+					"@type": "Organization",
+					"@id": "https://genospect.github.io/#organization",
+					"name": "Genospect",
+					"url": "https://genospect.github.io/",
+					"email": "info@genospect.com",
+					"logo": "https://genospect.github.io/images/genospectnobg.png",
+					"description": "Governed computational infrastructure for AI-driven biology."
+				},
+				{
+					"@type": "WebSite",
+					"@id": "https://genospect.github.io/#website",
+					"url": "https://genospect.github.io/",
+					"name": "Genospect",
+					"publisher": { "@id": "https://genospect.github.io/#organization" },
+					"description": "Trusted infrastructure for AI-driven biology."
+				},
+				{
+					"@type": "SoftwareApplication",
+					"name": "Genospect",
+					"applicationCategory": "DeveloperApplication",
+					"applicationSubCategory": "Computational biology infrastructure",
+					"operatingSystem": "Cloud and controlled compute environments",
+					"url": "https://genospect.github.io/",
+					"description": "Software infrastructure for governed biological data, reproducible scientific execution, provenance, and evidence."
+				}
+			]
+		}
+		</script>
+
+		<link rel="stylesheet" href="assets/css/redesign.css?v=20260909-4" />
+		<script src="assets/js/main.js?v=20260909-3" defer></script>
+	</head>
+	<body class="is-preload genospect-site">
+		<a class="skip-link" href="#main-content">Skip to content</a>
+
+		<header id="sidebar">
+			<div class="sidebar-inner">
+				<a href="#platform" class="brand-link" aria-label="Genospect home">
+					<img src="images/genospectnobgwhite.png" alt="Genospect" class="sidebar-logo" width="500" height="500" />
+				</a>
+				<button class="mobile-nav-toggle" type="button" aria-controls="primary-nav" aria-expanded="false"><span class="menu-label">Menu</span><i aria-hidden="true"></i></button>
+				<nav id="primary-nav" aria-label="Primary navigation">
+					<ul>
+						<li><a href="#platform">Platform</a></li><li><a href="#runtime">Runtime</a></li><li><a href="#evidence">Evidence</a></li><li><a href="#security">Security</a></li><li><a href="#developers">Developers</a></li><li><a href="#roadmap">Roadmap</a></li><li><a href="#documentation" aria-label="Docs and agent interface direction">Docs <span aria-hidden="true">→</span></a></li>
+					</ul>
+					<div class="mobile-system-status" aria-label="System status: trusted data foundation operational; agent runtime in development"><span>SYSTEM</span><strong>● DATA / OPERATIONAL</strong><strong>◌ RUNTIME / IN DEVELOPMENT</strong></div>
+				</nav>
+				<div class="sidebar-note"><p>TRUSTED DATA.<br />REPRODUCIBLE SCIENCE.<br />AI-DRIVEN DISCOVERY.</p></div>
+				<div class="system-status" aria-label="System status: M3 runtime work in progress"><span class="micro-label">SYSTEM</span><span><i aria-hidden="true"></i> M3 DEVELOPMENT ACTIVE</span></div>
+			</div>
+		</header>
+
+		<main id="main-content">
+			<section id="platform" class="hero section-dark" aria-labelledby="hero-title">
+				<div class="sequence-text" aria-hidden="true">&gt;SEQ_001&nbsp; ATGCGATCGATCGATCG...<br />&gt;SEQ_002&nbsp; ATGCGATGGATCGATCG...</div>
+				<div class="section-inner hero-grid">
+					<div class="hero-copy reveal">
+						<p class="eyebrow">BIOLOGICAL DATA <span>→</span> GOVERNED EXECUTION <span>→</span> VERIFIABLE EVIDENCE</p>
+						<h1 id="hero-title">Trusted infrastructure<br />for AI-driven biology.</h1>
+						<p class="hero-subtitle">Genospect gives AI agents and researchers a governed environment for biological data, scientific tools, and reproducible computation—from verified genomic inputs to machine-readable evidence.</p>
+						<div class="button-row"><a href="#runtime" class="button button-primary">Explore the Runtime <span aria-hidden="true">→</span></a><a href="#architecture" class="button button-secondary">View Architecture</a></div>
+						<ul class="capability-signals" aria-label="Platform capabilities"><li><span class="signal-icon" aria-hidden="true">◇</span><span>Verified Data</span></li><li><span class="signal-icon" aria-hidden="true">⌁</span><span>Controlled Execution</span></li><li><span class="signal-icon" aria-hidden="true">⌘</span><span>Complete Provenance</span></li><li><span class="signal-icon" aria-hidden="true">▱</span><span>Machine-Readable Evidence</span></li></ul>
+					</div>
+					<article class="runtime-panel reveal" aria-label="Conceptual Genospect Agent Runtime interface">
+						<header class="panel-header"><div><span class="micro-label">GENOSPECT</span><strong>Agent Runtime</strong></div><span class="status-pill"><i aria-hidden="true"></i> M3 IN PROGRESS</span></header>
+						<div class="runtime-tabs" aria-hidden="true"><span class="active">1. Plan</span><span>2. Validate</span><span>3. Execute</span></div>
+						<div class="runtime-content">
+							<p class="panel-section-label">REQUEST</p>
+							<dl class="request-grid"><div><dt>Capability</dt><dd>multiple_sequence_alignment</dd></div><div><dt>Tool</dt><dd>Clustal Omega 1.2.4</dd></div><div><dt>Input</dt><dd>homologs.fasta <span>28 sequences</span></dd></div></dl>
+							<p class="panel-section-label">PREFLIGHT</p>
+							<ul class="check-list"><li>Capability allowed</li><li>Input integrity verified</li><li>Parameters valid</li><li>Compute within policy</li></ul>
+							<div class="decision-row"><span><small>DECISION</small><strong>● EXECUTABLE</strong></span><span class="concept-button" aria-hidden="true">Run Analysis →</span></div>
+						</div>
+						<p class="concept-label">INTERFACE DIRECTION · NOT YET PRODUCTION</p>
+					</article>
 				</div>
 			</section>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
-							<h1>The Compliance-Ready Workflow Platform for Genomics & BioAI</h1>
-							<p class="hero-subtitle">Genospect helps life sciences teams store, organize, compress, encrypt, and analyze genomic data while building the provenance layer needed for regulated bioinformatics and AI workflows. The current MVP supports genomic file management, experiment organization, Clustal Omega multiple sequence alignment, and cloud storage integrations.</p>
-							<ul class="actions hero-actions">
-								<li><a href="#one" class="button secondary scrolly">View Platform</a></li>
-								<li><a href="#three" class="button primary scrolly">Get Early Access</a></li>
-							</ul>
-						</div>
-					</section>
-
-				<!-- One -->
-					<section id="one" class="wrapper style2-alt spotlights">
-						<section>
-							<a href="#" class="image"><img src="images/pic01.png" alt="" class="genospect-image" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Secure Genomic File Management</h2>
-									<p>Store, organize, compress, and encrypt genomic files in experiment-based workspaces. Genospect gives teams a structured foundation for managing raw sequencing files, lab outputs, metadata, and analysis-ready datasets without losing file context or project traceability.</p>
-									<div class="solution-features">
-										<span class="feature-tag">File Management</span>
-										<span class="feature-tag">Compression</span>
-										<span class="feature-tag">Encryption</span>
-									</div>
-									<ul class="actions">
-										<li><a href="#three" class="button scrolly">Start Building</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-
-						<div class="divider"></div>
-
-						<section>
-							<a href="#" class="image"><img src="images/pic02.png" alt="" class="genospect-image" data-position="top center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Reproducible Bioinformatics Workflows</h2>
-									<p>Run bioinformatics tools inside a governed project environment. The MVP includes multiple sequence alignment with Clustal Omega, with variant-calling workflows, parameter tracking, and source-to-output run history expanding next.</p>
-									<div class="solution-features">
-										<span class="feature-tag">Clustal Omega MSA</span>
-										<span class="feature-tag">Variant Calling Roadmap</span>
-										<span class="feature-tag">Run Traceability</span>
-									</div>
-									<ul class="actions">
-										<li><a href="#three" class="button scrolly">View Workflows</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-
-						<div class="divider"></div>
-
-						<section>
-							<a href="#" class="image"><img src="images/pic03.png" alt="" class="genospect-image" data-position="25% 25%" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Cloud-Connected Data Infrastructure</h2>
-									<p>Connect genomic workflows to external storage and compute environments while keeping data organization and governance centralized. Genospect currently supports Google Cloud and Google Drive integrations, with AWS and Azure support in development.</p>
-									<div class="solution-features">
-										<span class="feature-tag">Google Cloud</span>
-										<span class="feature-tag">Google Drive</span>
-										<span class="feature-tag">Multi-Cloud Roadmap</span>
-									</div>
-									<ul class="actions">
-										<li><a href="#three" class="button scrolly">Plan a Pilot</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-					</section>
-
-				<!-- Roadmap -->
-					<section id="roadmap" class="wrapper style3 fade-up">
-						<div class="inner">
-							<h2>Our Roadmap: From Genomic Files to Trusted BioAI</h2>
-							<p class="roadmap-subtitle">Building the governed workflow layer between raw biological data, reproducible bioinformatics, and AI-ready datasets.</p>
-							<div class="timeline">
-								<div class="timeline-item active">
-									<div class="timeline-marker">
-										<span class="timeline-number">1</span>
-									</div>
-									<div class="timeline-content">
-										<h3>Secure Genomic File Management</h3>
-										<p>Current MVP supports genomic file storage, experiment-based organization, compression, encryption, multiple sequence alignment, and Google Cloud / Google Drive integrations.</p>
-										<div class="timeline-status">Current MVP</div>
-									</div>
-								</div>
-
-								<div class="timeline-item">
-									<div class="timeline-marker">
-										<span class="timeline-number">2</span>
-									</div>
-									<div class="timeline-content">
-										<h3>Reproducible Pipelines & Audit Trails</h3>
-										<p>Expand variant-calling workflows, workflow parameter tracking, source-to-output provenance, run history, and audit-ready reporting for regulated research teams.</p>
-										<div class="timeline-status">Next</div>
-									</div>
-								</div>
-
-								<div class="timeline-item">
-									<div class="timeline-marker">
-										<span class="timeline-number">3</span>
-									</div>
-									<div class="timeline-content">
-										<h3>AI-Ready Dataset & Workflow Layer</h3>
-										<p>Prepare standardized, provenance-rich biological datasets for ML workflows, model validation, explainability, and governed BioAI deployment.</p>
-										<div class="timeline-status">Roadmap</div>
-									</div>
-								</div>
-							</div>
-							<p class="roadmap-tagline"><strong>Where raw biological data becomes trusted AI-ready evidence.</strong></p>
-						</div>
-					</section>
-
-				<!-- Two -->
-					<section id="two" class="wrapper style1 fade-up">
-						<div class="inner">
-							<h2>Platform Capabilities</h2>
-							<p>Built for regulated genomic data transformation. Genospect provides the foundation for secure, auditable, and reproducible life sciences workflows — from raw biological files to trusted computational outputs.</p>
-
-							<div class="features">
-								<section>
-									<span class="icon solid major fa-file-upload"></span>
-									<h3>Genomic File Management</h3>
-									<p>Store and organize sequencing files, lab exports, metadata, and experiment context inside structured research workspaces.</p>
-								</section>
-
-								<section>
-									<span class="icon solid major fa-lock"></span>
-									<h3>Compression & Encryption</h3>
-									<p>Compress and encrypt genomic files to support more secure, storage-efficient handling of large biological datasets.</p>
-								</section>
-
-								<section>
-									<span class="icon solid major fa-dna"></span>
-									<h3>Multiple Sequence Alignment</h3>
-									<p>Run Clustal Omega multiple sequence alignment workflows and keep analysis outputs connected to their source files and experiment records.</p>
-								</section>
-
-								<section>
-									<span class="icon solid major fa-vial"></span>
-									<h3>Variant Calling Roadmap</h3>
-									<p>Early variant-calling workflow development is underway, with future support for tracked parameters, outputs, and workflow reproducibility.</p>
-								</section>
-
-								<section>
-									<span class="icon solid major fa-route"></span>
-									<h3>Source-to-Output Provenance</h3>
-									<p>Track how files, parameters, transformations, and analysis outputs relate across the research workflow.</p>
-								</section>
-
-								<section>
-									<span class="icon solid major fa-cloud"></span>
-									<h3>Cloud Storage Integrations</h3>
-									<p>Connect research data workflows to Google Cloud and Google Drive, with AWS and Azure support planned as the platform expands.</p>
-								</section>
-
-								<section>
-									<span class="icon solid major fa-clipboard-check"></span>
-									<h3>Audit-Ready Workflow Records</h3>
-									<p>Build toward audit-ready records for regulated research workflows, including file history, run metadata, access events, and transformation logs.</p>
-								</section>
-
-								<section>
-									<span class="icon solid major fa-brain"></span>
-									<h3>AI-Ready Dataset Preparation</h3>
-									<p>Prepare standardized, traceable datasets for future model development, validation, explainability, and regulated BioAI use cases.</p>
-								</section>
-							</div>
-
-							<ul class="actions">
-								<li><a href="#three" class="button scrolly">Get Platform Access</a></li>
-							</ul>
-						</div>
-					</section>
-
-				<!-- Three -->
-					<section id="three" class="wrapper style3 fade-up">
-						<div class="inner">
-							<h2>Get Early Access</h2>
-							<p>Join life sciences teams exploring secure genomic file management, reproducible bioinformatics workflows, and AI-ready dataset preparation. Genospect is building the governed workflow layer between raw biological data, cloud infrastructure, and trusted computational evidence.</p>
-
-							<div class="split style1">
-								<section>
-									<form method="post" action="https://formspree.io/f/moqgnpll">
-										<div class="fields">
-											<div class="field half">
-												<label for="name">Name</label>
-												<input type="text" name="name" id="name" required />
-											</div>
-
-											<div class="field half">
-												<label for="email">Email</label>
-												<input type="email" name="email" id="email" required />
-											</div>
-
-											<div class="field">
-												<label for="interest">Primary Interest</label>
-												<select name="interest" id="interest">
-													<option value="">Select your focus area</option>
-													<option value="file-management">Genomic File Management</option>
-													<option value="compression-encryption">Compression / Encryption</option>
-													<option value="bioinformatics-workflows">Bioinformatics Workflows</option>
-													<option value="cloud-integrations">Cloud Storage Integrations</option>
-													<option value="audit-trails">Audit Trails / Provenance</option>
-													<option value="ai-datasets">AI-Ready Dataset Preparation</option>
-													<option value="partnership">Partnership / Pilot</option>
-												</select>
-											</div>
-										</div>
-
-										<div class="cta-buttons">
-											<input type="submit" value="Request Early Access" class="button primary submit" />
-										</div>
-									</form>
-								</section>
-
-								<section>
-									<ul class="contact">
-										<li>
-											<h3>Connect With Us</h3>
-											<span>Stay updated on Genospect’s journey as we build secure genomic data infrastructure, reproducible bioinformatics workflows, and AI-ready dataset tools for life sciences teams.</span>
-										</li>
-
-										<li>
-											<h3>Email</h3>
-											<a href="mailto:info@genospect.com">info@genospect.com</a>
-										</li>
-
-										<li>
-											<h3>Follow Us</h3>
-											<ul class="icons">
-												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-											</ul>
-										</li>
-									</ul>
-								</section>
-							</div>
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Footer -->
-			<footer id="footer" class="wrapper style3">
-				<div class="inner">
-					<div class="footer-content">
-						<ul class="menu">
-							<li>&copy; Genospect. All rights reserved.</li>
-							<li>Built for compliance, designed for discovery.</li>
-						</ul>
+			<section id="data" class="section section-light" aria-labelledby="data-title">
+				<div class="section-inner split-layout">
+					<div class="section-copy reveal"><p class="section-index">01 / VERIFIED INPUTS</p><h2 id="data-title">Verified Biological Data</h2><p class="section-lead">Start with trusted inputs.</p><p>Genospect treats biological data as immutable, versioned artifacts. Integrity checks, validation state, lineage, and controlled access travel with every file—so downstream computation starts from evidence you can verify.</p><ul class="feature-list"><li>Content-addressed integrity verification</li><li>Versioned artifacts and validation records</li><li>Project-scoped authorization boundaries</li></ul><a href="#evidence" class="text-link">Follow the evidence chain <span aria-hidden="true">→</span></a></div>
+					<div class="artifact-composition reveal">
+						<article class="data-card artifact-card"><header class="card-kicker"><span>ARTIFACT</span><span class="verified-badge">✓ VERIFIED</span></header><div class="file-heading"><span class="file-icon" aria-hidden="true">▱</span><div><h3>sample_017_R1.fastq.gz</h3><p>FASTQ · 2.4 GB · v3</p></div></div><dl class="artifact-meta"><div><dt>SHA-256</dt><dd>a87fc39bd8ddf…9c2e1ffa</dd></div><div><dt>Created</dt><dd>Run 24-226</dd></div><div><dt>Access</dt><dd>Project scoped</dd></div></dl><div class="validation-block"><p>VALIDATION</p><span>FASTQ structure <b>PASS</b></span><span>Integrity <b>PASS</b></span></div><div class="derived-list"><p>DERIVED ARTIFACTS</p><span>alignment.bam</span><span>variants.vcf</span><span>qc.json</span></div><a href="#evidence" class="card-link">View lineage →</a></article>
+						<aside class="data-card file-preview" aria-label="Example FASTQ file preview"><header class="card-kicker"><span>FILE PREVIEW</span><span>FASTQ</span></header><pre><code>@SEQ_017_001
+GATCGATCGTACTAGCTA
++
+?FFFFF:FFFFFFFFFFF
+@SEQ_017_002
+CTAGCGTAGGCTAGGCTA
++
+FFFFF?FFFFFFFFFFFF</code></pre><dl><div><dt>Read length</dt><dd>150 bp</dd></div><div><dt>Paired end</dt><dd>Yes</dd></div><div><dt>Total reads</dt><dd>28,421,442</dd></div></dl></aside>
 					</div>
 				</div>
-			</footer>
+			</section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<section id="runtime" class="section section-dark runtime-section" aria-labelledby="runtime-title">
+				<div class="section-inner split-layout runtime-layout">
+					<div class="section-copy reveal"><p class="section-index">02 / CONTROLLED COMPUTE</p><h2 id="runtime-title">Governed Scientific Execution</h2><p class="section-lead">Let AI agents use tools—safely.</p><p>Agents discover allowlisted capabilities and submit typed plans. Genospect validates identity, inputs, parameters, policy, and resource constraints before a run can enter the execution substrate.</p><div class="accuracy-note"><span>M3 STATUS</span> Agent-facing discovery, preflight, and the first real Clustal Omega executor are in active development.</div><a href="#developers" class="text-link text-link-dark">See the planned agent interface <span aria-hidden="true">→</span></a></div>
+					<figure id="architecture" class="control-flow reveal" aria-labelledby="architecture-caption"><figcaption id="architecture-caption" class="sr-only">Proposed agent plan passes through the Genospect control plane before reaching allowlisted scientific tools.</figcaption><div class="flow-node agent-node"><span class="node-icon" aria-hidden="true">⌾</span><small>CALLER</small><strong>AI Agent</strong><em>Claude · GPT · custom</em></div><div class="flow-connector"><span>proposed plan</span><i aria-hidden="true"></i></div><div class="flow-node control-node"><small>GENOSPECT</small><strong>Control Plane</strong><ul><li>Identity scoped</li><li>Tool allowlisted</li><li>Inputs validated</li><li>Parameters typed</li><li>Policy enforced</li><li>Resources bounded</li></ul></div><div class="flow-connector"><span>authorized execution</span><i aria-hidden="true"></i></div><div class="flow-node tools-node"><small>EXECUTION</small><strong>Scientific Tools</strong><ul><li class="available">Clustal Omega <b>M3</b></li><li>GATK <b>PLANNED</b></li><li>bcftools <b>PLANNED</b></li><li>Nextflow <b>PLANNED</b></li></ul></div></figure>
+				</div>
+			</section>
 
+			<section id="evidence" class="section section-light evidence-section" aria-labelledby="evidence-title">
+				<div class="section-inner split-layout">
+					<div class="section-copy reveal"><p class="section-index">03 / TRACEABLE RESULTS</p><h2 id="evidence-title">Evidence, Not Just Outputs</h2><p class="section-lead">Every scientific conclusion should be traceable.</p><p>Genospect connects exact inputs, execution records, outputs, and validation state. M3 returns a bounded machine-readable result envelope; richer evidence and claim semantics arrive in M4.</p><a href="#developers" class="text-link">Inspect the interface direction <span aria-hidden="true">→</span></a></div>
+					<div class="evidence-ui reveal">
+						<article class="lineage-card"><header class="card-kicker"><span>EXECUTION → EVIDENCE</span><span>RUN_01JQ</span></header><ol class="lineage-list"><li tabindex="0"><span class="lineage-number">1</span><div><small>SOURCE DATA</small><strong>homologs.fasta</strong><span class="node-metadata">artifact_01K8 · SHA verified</span></div></li><li tabindex="0"><span class="lineage-number">2</span><div><small>TRANSFORMATION</small><strong>Clustal Omega 1.2.4</strong><span class="node-metadata">iterations: 3 · isolated environment</span></div></li><li tabindex="0"><span class="lineage-number">3</span><div><small>RESULT</small><strong>alignment.fasta</strong><span class="node-metadata">artifact_01K9 · run attempt 1</span></div></li><li tabindex="0"><span class="lineage-number">4</span><div><small>VALIDATION</small><strong>QC passed</strong><span class="node-metadata">28 sequences · deterministic check</span></div></li><li class="planned-node" tabindex="0"><span class="lineage-number">5</span><div><small>EVIDENCE · M4 PLANNED</small><strong>ev_0102</strong><span class="node-metadata">machine-readable assertion</span></div></li><li class="planned-node" tabindex="0"><span class="lineage-number">6</span><div><small>SCIENTIFIC CLAIM · M4 PLANNED</small><strong>Conserved region identified</strong><span class="node-metadata">citation resolves to evidence chain</span></div></li></ol></article>
+						<aside class="result-card"><header class="card-kicker"><span>ALIGNMENT RESULT</span><span>FASTA</span></header><pre><code>&gt;seq01
+MKTIIALSYIFCLVFA
+&gt;seq02
+MKTIIALSYIFCLVFA
+&gt;seq03
+MKTIIALSYIFCLVFA
+::::**:::</code></pre><div class="qc-metrics"><p>QC METRICS</p><span>Sequence count <b>28 ✓</b></span><span>Alignment length <b>1,241 ✓</b></span><span>Mean identity <b>87.3%</b></span><span>Status <b class="pass">PASS</b></span></div></aside>
+					</div>
+				</div>
+			</section>
+
+			<section id="developers" class="section section-dark developer-section" aria-labelledby="developer-title">
+				<div class="section-inner">
+					<div class="developer-heading reveal"><div class="section-copy"><p class="section-index">04 / PLANNED AGENT API</p><h2 id="developer-title">Built for agents.<br />Accessible to developers.</h2></div><div class="developer-summary"><span class="roadmap-badge">INTERFACE DIRECTION · M3</span><p>This conceptual contract shows the intended shape of typed execution and structured results. It is not a generally available SDK today.</p></div></div>
+					<div id="documentation" class="code-grid reveal"><article class="code-window"><header><span>agent_request.py</span><span>PYTHON · CONCEPTUAL</span></header><pre><code><span class="code-key">run</span> = genospect.runs.create(
+    capability=<span class="code-string">"multiple_sequence_alignment"</span>,
+    inputs=[<span class="code-string">"artifact_01K8..."</span>],
+    parameters={<span class="code-string">"iterations"</span>: <span class="code-number">3</span>}
+)
+
+result = run.wait()
+
+print(result.evidence)</code></pre></article><article class="code-window response-window"><header><span>result_envelope.json</span><span>STRUCTURED RESULT</span></header><pre><code>{
+  <span class="code-string">"status"</span>: <span class="code-string">"succeeded"</span>,
+  <span class="code-string">"outputs"</span>: [<span class="code-string">"artifact_01K9..."</span>],
+  <span class="code-string">"qc"</span>: { <span class="code-string">"status"</span>: <span class="code-string">"pass"</span> },
+  <span class="code-string">"evidence"</span>: [
+    { <span class="code-string">"type"</span>: <span class="code-string">"execution_record"</span> }
+  ]
+}</code></pre></article></div>
+				</div>
+			</section>
+
+			<section id="roadmap" class="section section-deep roadmap-section" aria-labelledby="roadmap-title">
+				<div class="section-inner">
+					<div class="section-heading reveal"><p class="section-index">05 / STRATEGIC ROADMAP</p><h2 id="roadmap-title">From Trusted Data to AI-Operated Science</h2><p>A focused path from a reliable artifact and run substrate to governed, measurable agent-driven biological research.</p></div>
+					<ol class="roadmap-track reveal"><li class="complete"><span class="roadmap-marker" aria-hidden="true">✓</span><div class="roadmap-content"><small>M0–M2</small><h3>Foundation</h3><span class="roadmap-name">Trusted execution substrate</span><strong>Complete</strong><ul><li>Project-scoped authorization</li><li>Immutable artifacts</li><li>Durable run foundation</li><li>Provenance and integrity</li></ul></div></li><li class="active"><span class="roadmap-marker" aria-hidden="true"></span><div class="roadmap-content"><small>M3</small><h3>Agent Runtime v0</h3><strong>In Progress</strong><ul><li>Capability discovery</li><li>Typed plan preflight</li><li>Curated Clustal execution</li><li>Result envelope</li></ul></div></li><li><span class="roadmap-marker" aria-hidden="true"></span><div class="roadmap-content"><small>M4</small><h3>Evidence Semantics v1</h3><strong>Planned</strong><ul><li>Validation assertions</li><li>Scientific claims</li><li>Lineage queries</li><li>Evidence API</li></ul></div></li><li><span class="roadmap-marker" aria-hidden="true"></span><div class="roadmap-content"><small>M5</small><h3>Agent Policy &amp; Delegation</h3><strong>Planned</strong><ul><li>Explicit identities</li><li>Scoped access</li><li>Approval workflows</li><li>Usage limits</li></ul></div></li><li><span class="roadmap-marker" aria-hidden="true"></span><div class="roadmap-content"><small>M6</small><h3>Biological Agent Benchmark</h3><strong>Planned</strong><ul><li>Evaluation suite</li><li>Agent trace capture</li><li>Grading and reporting</li><li>Model comparisons</li></ul></div></li></ol>
+				</div>
+			</section>
+
+			<section id="security" class="section section-light capabilities-section" aria-labelledby="capabilities-title">
+				<div class="section-inner">
+					<div class="section-heading section-heading-dark reveal"><p class="section-index">06 / PLATFORM CAPABILITIES</p><h2 id="capabilities-title">Infrastructure for reliable biological research</h2><p>Built for research teams—and the AI agents that increasingly accelerate them.</p></div>
+					<div class="capability-grid reveal"><article><span class="capability-icon" aria-hidden="true">◉</span><span class="capability-state current">CURRENT</span><h3>Verified Biological Data</h3><p>Immutable, validated artifacts with versioning, integrity verification, and controlled access.</p></article><article><span class="capability-icon" aria-hidden="true">⌁</span><span class="capability-state progress">M3</span><h3>Scientific Tool Execution</h3><p>Governed execution of computational biology tools with typed parameters and resource controls.</p></article><article><span class="capability-icon" aria-hidden="true">⌘</span><span class="capability-state current">FOUNDATION</span><h3>Evidence &amp; Provenance</h3><p>Trace outputs through transformations, execution records, exact inputs, and source data.</p></article><article><span class="capability-icon" aria-hidden="true">⌾</span><span class="capability-state progress">IN DEVELOPMENT</span><h3>Agent-Ready Interface</h3><p>Typed interfaces for capability discovery, plan validation, and bounded analysis execution.</p></article><article><span class="capability-icon" aria-hidden="true">△</span><span class="capability-state planned">ARCHITECTURE</span><h3>Cloud &amp; On-Prem Infrastructure</h3><p>An engine-agnostic design for connecting controlled compute and storage environments.</p></article><article><span class="capability-icon" aria-hidden="true">◇</span><span class="capability-state current">CURRENT</span><h3>Audit &amp; Governance</h3><p>Authorization boundaries, immutable records, execution history, and policy-aware operations.</p></article></div>
+				</div>
+			</section>
+
+			<section id="early-access" class="section section-dark cta-section" aria-labelledby="cta-title">
+				<div class="section-inner cta-grid">
+					<div class="cta-copy reveal"><p class="section-index">GET STARTED</p><h2 id="cta-title">Build the infrastructure for AI-operated biology.</h2><p>Join researchers, developers, and scientific teams exploring governed computational infrastructure for AI-driven biology.</p><div class="contact-detail"><span>DIRECT CONTACT</span><a href="mailto:info@genospect.com">info@genospect.com</a></div></div>
+					<form class="access-form reveal" method="post" action="https://formspree.io/f/moqgnpll"><input type="hidden" name="_subject" value="Genospect early-access request" /><div class="form-row"><div class="field"><label for="name">Name</label><input type="text" name="name" id="name" autocomplete="name" required /></div><div class="field"><label for="email">Email</label><input type="email" name="email" id="email" autocomplete="email" required /></div></div><div class="field"><label for="interest">Primary interest</label><select name="interest" id="interest" required><option value="">Select your focus area</option><option value="verified-biological-data">Verified biological data</option><option value="agent-runtime">Agent runtime</option><option value="scientific-execution">Scientific tool execution</option><option value="evidence-provenance">Evidence and provenance</option><option value="infrastructure">Cloud or on-prem infrastructure</option><option value="partnership">Research partnership or pilot</option></select></div><label class="checkbox-field"><input type="checkbox" name="updates" value="yes" /><span>Send me occasional product updates.</span></label><button type="submit" class="button button-primary form-submit">Request Early Access <span aria-hidden="true">→</span></button><p class="form-note">Your request is sent through the existing secure contact workflow.</p></form>
+				</div>
+			</section>
+		</main>
+
+		<footer id="footer"><div class="footer-inner"><a href="#platform" class="footer-brand">GENOSPECT</a><p>© <span id="current-year">2026</span> Genospect. All rights reserved.</p><nav aria-label="Footer navigation"><a href="https://github.com/Genospect" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a href="mailto:info@genospect.com">Contact</a><a href="#roadmap">Roadmap</a></nav></div></footer>
 	</body>
 </html>
